@@ -1,0 +1,282 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+/** {*/
+  /*margin: 0;*/
+  /*padding: 0;*/
+  /*-webkit-tap-highlight-color: rgba(255, 0, 0, 0);*/
+/*}*/
+
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr {
+  margin: 0;
+  padding: 0;
+}
+
+body, button, input, select, textarea p span {
+  font: 12px/1.5 PingFang SC, SF-UI Display, Source Han Sans, Roboto,MicrosoftYaHei, arial, verdana, sans-serif;
+}
+
+input, button, select, textarea {
+  outline: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal
+}
+
+body, input, textarea, a {
+  outline: none;
+}
+
+li {
+  list-style: none
+}
+
+fieldset, img {
+  border: 0
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+q:before, q:after {
+  content: ''
+}
+
+button, input, select, textarea {
+  font-size: 100%;
+  border-width: 0px;
+}
+
+legend {
+  color: #000
+}
+
+small {
+  font-size: 12px
+}
+
+hr {
+  border: none;
+  height: 1px
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+i {
+  display: inline-block;
+}
+
+::-webkit-scrollbar{
+  display:none;
+}
+
+/*适配*/
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 42.66px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 352px) {
+  html {
+    font-size: 46px;
+  }
+}
+
+@media only screen and (min-width: 353px) and (max-width: 370px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (min-width: 371px) and (max-width: 380px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 381px) and (max-width: 390px) {
+  html {
+    font-size: 52px;
+  }
+}
+
+@media only screen and (min-width: 391px) and (max-width: 400px) {
+  html {
+    font-size: 53px;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 410px) {
+  html {
+    font-size: 54px;
+  }
+}
+
+@media only screen and (min-width: 411px) and (max-width: 413px) {
+  html {
+    font-size: 54.8px;
+  }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 420px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media only screen and ( min-width: 421px) and ( max-width: 440px) {
+  html {
+    font-size: 58px;
+  }
+}
+
+@media only screen and ( min-width: 441px) and ( max-width: 699px) {
+  html {
+    font-size: 58px;
+  }
+}
+
+@media only screen and ( min-width: 700px) and (max-width: 768px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+@media only screen and ( min-width: 769px) and (max-width: 800px) {
+  html {
+    font-size: 106.667px;
+  }
+}
+
+@media only screen and ( min-width: 801px) and (max-width: 1024px) {
+  html {
+    font-size: 136.533px;
+  }
+}
+input{-webkit-tap-highlight-color:transparent !important;}
+
+.sy-switch .icon-ball.check{
+  -webkit-transform: translate(20px, 0px);
+  transform: translate(20px,0px);
+}
+.sy-switch .icon-bg.check {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+/*@media only screen and ( min-width: 1024px) {*/
+  /*html {*/
+    /*font-size: 136.533px;*/
+    /*width: 1024px;*/
+    /*margin: auto;*/
+  /*}*/
+  /*#app {*/
+    /*height: auto;*/
+    /*border-left: 1px solid #e1e1e1;*/
+    /*border-right: 1px solid #e1e1e1;*/
+  /*}*/
+/*}*/
+/*iphoneX-footer-fixed 适配*/
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3){
+  .iphonex-padding-bottom{padding-bottom:0.68rem;}
+  .iphonex-padding-bottom-bg{padding-bottom:0.68rem;background: rgba(249,249,249,1);}
+  .iphonex-margin-bottom{margin-bottom:0.68rem;}
+  .iphonex-margin-bottom-bg{margin-bottom:0.68rem;background: rgba(249,249,249,1);}
+  .iphonex-margin-bottom-bg:after{content:"";display:block;width:100%;height:calc(100% + 0.68rem);background:rgba(248,248,248,1);}
+  .iphonex-bottom-blank{height:0.68rem;background:rgba(248,248,248,1);}
+  .iphonex-white-blank{height:0.68rem;background:#fff;}
+  .iphonex-bottom-div{position:relative;padding-bottom:0.68rem;}
+  .iphonex-bottom-div:after{display:block;content:"";width:100%;height:calc(100% + 0.68rem);background:rgba(248,248,248,1);}
+  .iphonex-bottom-after{margin-bottom:0.68rem;}
+  .iphonex-bottom-after:after{content:"";display:block;width:100%;height:calc(100% + 0.68rem);background:rgba(248,248,248,1);}
+
+  .iphone10-footer-padding{padding-bottom:34px !important;background: rgba(249,249,249,1);}
+  .iphone10-padd-footer{padding-bottom:0.68rem;}
+
+}
+img[lazy='error'] {
+  background: #eee url(../../static/images/common/default.svg) no-repeat center center !important;
+  background-size: 50% !important;
+}
+
+img[lazy='loading'] {
+  background: #eee url(../../static/images/common/default.svg) no-repeat center center !important;
+  background-size: 50% !important;
+}
+
+
+/*g预览图片*/
+.pswp__top-bar,.pswp__caption{
+    opacity:1!important;
+}
+.pswp__counter{
+    font:0.34rem/0.88rem PingFang SC, SF-UI Display, Source Han Sans, Roboto,MicrosoftYaHei, arial, verdana, sans-serif!important;
+}
+.pswp__counter{
+    width:100%;
+    text-align:center;
+}
+.pswp__caption__center{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width:100%;
+    padding:0 0.3rem !important;
+    margin:10px 0!important;
+    font:0.28rem/0.4rem PingFang SC, SF-UI Display, Source Han Sans, Roboto,MicrosoftYaHei, arial, verdana, sans-serif!important;
+}
+/*g预览图片 end*/
+/*g轮播图*/
+.goodsdetails-pagination-bullets{
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+}
+.goodsdetails-pagination-bullets .swiper-pagination-bullet{
+    width:8px;
+    height:8px;
+    border-radius:5px;
+    opacity: 1;
+    background-color:RGBA(255, 255, 255, 0.74);
+    display:inline-block;
+}
+.goodsdetails-pagination-bullets .swiper-pagination-bullet-active{
+    width:20px;
+    background-image:linear-gradient(to right,RGBA(255, 25, 25, 1),RGBA(255, 101, 51, 1));
+}
+.goodsdetails-pagination-bullets .swiper-pagination-bullet + .swiper-pagination-bullet{
+    margin-left:0.2rem;
+}
+/*g轮播图end*/

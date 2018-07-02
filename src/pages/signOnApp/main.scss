@@ -1,0 +1,259 @@
+$fa:PingFang SC, SF-UI Display, Source Han Sans, Roboto;
+$c4B:#4B4B4B;
+$c2E:#2E2E2E;
+$red:#FF1919;
+$c94:#949494;
+$brown:#681616;
+.container{
+    width:100%;
+    min-height:100%;
+    overflow-x:hidden;
+    font:0.26rem/1.5 $fa;
+}
+.top{
+    width:100%;
+    height:5.3rem;
+    box-sizing:border-box;
+    padding-top:0.4rem;
+    color:#fff;
+    background:url(/static/images/signOnApp/sign-bg.png) left top/cover no-repeat;
+    overflow:hidden;
+    //font:0/0 "";
+    .tip{
+        font:0.24rem/0.5rem $fa;
+        float:right;
+        background-color:rgba(0,0,0,0.18);
+        border-radius:0.24rem 0px 0px 0.24rem/0.24rem 0px 0px 0.24rem;
+        height:0.48rem;
+        padding:0 0.1rem 0 0.2rem;
+        color:#fff;
+        z-index:5;
+        position:relative;
+    }
+    .title{
+        padding:.52rem 0 0.2rem 0.3rem;
+        font:bold 0.48rem/0.67rem $fa;
+        background-color:transparent;
+    }
+    .p{
+        font:0.28rem/0.4rem $fa;
+        padding-left:0.3rem;
+
+    }
+}
+.gift-box{
+    width:100%;
+    box-sizing:border-box;
+    height:2rem;
+    overflow:hidden;
+    .gift-list{
+        height:100%;
+        overflow-x:scroll;
+        overflow-y:hidden;
+        white-space:nowrap;
+        -webkit-overflow-scrolling: touch;
+        font:0/0 Arial;
+        .item:first-child{
+            margin-left:0.1rem;
+        }
+        .item:last-child{
+            margin-right:0.1rem;
+        }
+        .item:first-child .line{
+            width: 0.2rem;
+        }
+        .item{
+            //display:inline-block;
+            width:1.04rem;
+            height:100%;
+            min-width:1.04rem;
+            display:inline-flex;
+            flex-direction:column;
+            align-items:center;
+            color:$brown;
+            .gift{
+                width:100%;
+                //height:0.76rem;
+                //margin-bottom:0.2rem;
+                height:0.96rem;
+                position:relative;
+                background:url(/static/images/signOnApp/top-gift.png) center center/0.3rem 0.3rem no-repeat;
+            }
+            .progress{
+                height:0.22rem;
+                width:0.22rem;
+                position:relative;
+
+            }
+            .circle{
+                width:0.22rem;
+                min-width:0.22rem;
+                max-width:0.22rem;
+                height:0.22rem;
+                min-height:0.22rem;
+                max-height:0.22rem;
+                flex:0 0 auto;
+                border-radius:50%;
+                background-color:#fff;
+                z-index:5;
+                position:relative;
+                //box-shadow:0 0 3px rgba(0,0,0,1);
+            }
+            .line{
+                width:0.9rem;
+                height:0.08rem;
+                position:absolute;
+                right:0.2rem;
+                top:0.07rem;
+                //background-color:$brown;
+                background-color:#fff;
+                z-index:4;
+                border-radius:0.04rem;
+            }
+            .time{
+                font:0.24rem/.33rem $fa;
+                padding-top:0.08rem;
+                padding-bottom:0.1rem;
+                color:#fff;
+            }
+            .award{
+                color:#FC7A3D;
+                background-color:#fff;
+                border-radius:0.11rem;
+                width:0.56rem;
+                height:0.22rem;
+                font:0.18rem/0.26rem $fa;
+                text-align:center;
+            }
+        }
+        .item.enough{
+            color:#fff;
+            .gift{
+                background: url(/static/images/signOnApp/top-gift-receive.png) center center/0.3rem 0.3rem no-repeat;
+            }
+            .award{
+                background-color:#fff;
+                background-color:rgba(255,255,255,0.62rem);
+            }
+            //.circle{
+            //    background-color:#FF6533;
+            //}
+            .circle{
+                background:url(/static/images/signOnApp/circle.png) center center/contain no-repeat;
+            }
+            .line{
+                background-color:#D95532;
+                //background:url(/static/images/signOnApp/line.png) center center/100% 100% no-repeat;
+            }
+        }
+
+    }
+
+}
+.calendar{
+    width:6.9rem;
+    //height:6.27rem;
+    padding:0 0 0.4rem;
+    margin:-0.57rem auto 0;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    border-radius:0.08rem;
+    background-color:#fff;
+    font:0/0 Arial;
+    .calendar_inner{
+        padding:0 0.1rem;
+    }
+    .tr{
+        white-space:nowrap;
+    }
+    .tr.first{
+        height:1.28rem;
+    }
+  .flex-able{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap
+  }
+  .item{
+    flex:1
+  }
+    .th{
+        font:bold 0.34rem/1.3rem $fa;
+        color:$c2E;
+        display:inline-block;
+        text-align:center;
+        float: left;
+    }
+    .th:first-child,.th:last-child{
+        color:$red;
+    }
+    .td{
+        font:0.34rem/0.6rem $fa;
+        height:0.58rem;
+        display:inline-block;
+        //color:$c2E;
+        color:$red;
+        width:14.285%;
+        text-align:center;
+        position:relative;
+        vertical-align: top;
+    }
+    .td.disabled{
+        color:#D0D0D0;
+    }
+    .gift{
+        background:url(/static/images/signOnApp/gift-receive.png) center center/0.39rem 0.51rem no-repeat;
+        font:0/0 Arial;
+    }
+    .red{
+        color:#FF1919;
+    }
+    .gift-disabled{
+        background:url(/static/images/signOnApp/gift-red.png) center center/0.34rem 0.34rem no-repeat;
+        font:0/0 Arial;
+    }
+    .gift>.today,.gift-disabled>.today{
+        font:0/0 Arial;
+    }
+    .trtd{
+        margin-top:0.32rem;
+    }
+    .tr.first + .tr{
+        margin-top:0.4rem;
+    }
+    .active{
+        background-color:rgba(255, 186, 186, 0.23);
+        color:$c2E;
+        //border-radius:0.29rem;
+    }
+    .active-alone:after{
+        content:"";
+        width:0.58rem;
+        height:0.58rem;
+        position:absolute;
+        left:50%;
+        top:0;
+        background-color:rgba(255, 186, 186, 0.23);
+        transform:translate(-50%,0);
+        border-radius:0.29rem;
+    }
+    .active-alone{
+        color:$c2E;
+    }
+    .activeBegin{
+        border-radius: 0.29rem 0px 0px 0.29rem/0.29rem 0px 0px 0.29rem!important;
+        background-color:rgba(255, 186, 186, 0.23);
+        color:$c2E;
+    }
+    .activeEnd{
+        border-radius: 0 0.29rem 0.29rem 0px/0 0.29rem 0.29rem 0px!important;
+        background-color:rgba(255, 186, 186, 0.23);
+        color:$c2E;
+    }
+    .today{
+        vertical-align:top;
+        display:inline-block;
+        font:0.24rem/0.6rem $fa;
+        color:$c2E;
+    }
+}
